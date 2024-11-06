@@ -917,6 +917,7 @@ static int ksoftirqd_should_run(unsigned int cpu)
 	return local_softirq_pending();
 }
 
+// 软中断
 static void run_ksoftirqd(unsigned int cpu)
 {
 	ksoftirqd_run_begin();
