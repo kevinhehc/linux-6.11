@@ -12024,6 +12024,7 @@ static struct smp_hotplug_thread backlog_threads = {
  *       This is called single threaded during boot, so no need
  *       to take the rtnl semaphore.
  */
+ // 注册软中断
 static int __init net_dev_init(void)
 {
 	int i, rc = -ENOMEM;
@@ -12124,4 +12125,5 @@ out:
 	return rc;
 }
 
+// 函数调用
 subsys_initcall(net_dev_init);
