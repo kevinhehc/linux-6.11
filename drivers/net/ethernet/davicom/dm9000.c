@@ -1365,6 +1365,7 @@ dm9000_stop(struct net_device *ndev)
 	return 0;
 }
 
+// 定义注册表
 static const struct net_device_ops dm9000_netdev_ops = {
 	.ndo_open		= dm9000_open,
 	.ndo_stop		= dm9000_stop,
@@ -1408,6 +1409,7 @@ static struct dm9000_plat_data *dm9000_parse_dt(struct device *dev)
 /*
  * Search DM9000 board, allocate space and register it
  */
+// 驱动注册
 static int
 dm9000_probe(struct platform_device *pdev)
 {
