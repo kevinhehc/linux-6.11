@@ -1174,6 +1174,7 @@ dm9000_rx(struct net_device *dev)
 				else
 					skb_checksum_none_assert(skb);
 			}
+			// 接受到数据的核心处理
 			netif_rx(skb);
 			dev->stats.rx_packets++;
 
