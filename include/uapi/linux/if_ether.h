@@ -126,7 +126,7 @@
 /*
  *	Non DIX types. Won't clash for 1500 types.
  */
-
+// 数据链路层协议类型
 #define ETH_P_802_3	0x0001		/* Dummy type for 802.3 frames  */
 #define ETH_P_AX25	0x0002		/* Dummy protocol id for AX.25  */
 #define ETH_P_ALL	0x0003		/* Every packet (be careful!!!) */
