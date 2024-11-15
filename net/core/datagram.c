@@ -528,6 +528,7 @@ static size_t simple_copy_to_iter(const void *addr, size_t bytes,
  *	@to: iovec iterator to copy to
  *	@len: amount of data to copy from buffer to iovec
  */
+ // 数据拷贝
 int skb_copy_datagram_iter(const struct sk_buff *skb, int offset,
 			   struct iov_iter *to, int len)
 {
